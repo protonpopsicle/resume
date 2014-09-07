@@ -1,92 +1,84 @@
 % Compile with XeTeX
 
-%\usepackage{fontspec}
-%\setsansfont[ItalicFont={Orator Std Slanted}]{Orator Std Medium}
-%\setsansfont{Orator Std Medium}
-%\setmainfont{Georgia}
-
-%\sectionfont{\Large\itshape\sffamily\MakeUppercase}
-%\subsectionfont{\Large\bfseries}
-
 %{\LARGE\sffamily Scott Meisburger}
 
 %{\sffamily 571 Prospect Ave. | Brooklyn, NY 11215 | 408.836.4502 | smeisburger@gmail.com}
+\font\orator = "Orator Std Medium" at 11 pt
+\font\oratorbig = "Orator Std Medium" at 22 pt
+\font\oratorsmall = "Orator Std Medium" at 8 pt
+\font\oratorslanted = "Orator Std Slanted" at 11 pt
+\font\seriffont = "Georgia:mapping=tex-text" at 8 pt
+\font\serifbold = "Georgia/B:mapping=tex-text" at 8 pt
+\font\serifgreen = "Georgia:color=33AA88,mapping=tex-text" at 7 pt
 
-
-%% \font\sf = cmss10
-%% \font\mediumsf = cmss10 scaled \magstephalf
 \hoffset = - .5 in
 \voffset = - .5 in
 \vsize = 9 in
 
-\font\sf = cmss10 scaled \magstep 0
-\def\section#1{{{#1}}}
+\parindent = 0 pt
+\baselineskip = 12 pt
+
+\def\scmtitle#1{\vskip 14 pt \leftline{\oratorslanted \uppercase{#1}} \vskip 6 pt}
+\def\scmitem#1{\leftline{\hskip 10pt #1}}
 
 \nopagenumbers
-\rm
 
-\headline={\hfil smeisburger@gmail.com $\circ$ 408.836.4502 $\circ$ 571 Prospect Ave. $\circ$ Brooklyn, NY 11215 \hfil }
+\seriffont
 
-\parindent = 10 mm
+{\oratorbig \uppercase{S\kern -.180em c\kern -.200em o\kern -.230em t\kern -.250em t\kern -.220em \ M\kern -.170em e\kern -.210em i\kern -.260em s\kern -.200em b\kern -.130em u\kern -.180em r\kern -.140em g\kern -.200em e\kern -.220em r}}
 
+\vskip 4.4 pt
+\leftline{\oratorsmall 571 Prospect Ave.~| Brooklyn, NY 11215 | 408.836.4502 | smeisburger@gmail.com}
 
-\beginsection \section{Qualifications}
+%% \scmtitle{Qualifications}
+%% \scmitem{Open source technology expertise}
+%% \scmitem{4 yrs.\ Python backend web experience}
+%% \scmitem{iOS development experience}
+%% \scmitem{Multi-disciplinary}
 
-\item{} Open source technology expertise
-\item{} 4 yrs.\ Python backend web experience
-\item{} iOS development experience
-\item{} Multi-disciplinary
+%% \scmitem{Languages+Libraries: Python, Flask, Django, Objective-C, JavaScript, HTML 5/CSS3}
+%% %% \item{} Skills: version control, TDD, Dev-Ops, deployment, APIs
+%% \scmitem{Tools: AWS, Emacs, Git, GNU/Linux, Mac OS X, Xcode}
 
-\vskip 4 mm
-
-\item{} Languages+Libraries: Python, Flask, Django, Objective-C, JavaScript, HTML 5/CSS3
-\item{} Skills: version control, TDD, Dev-Ops, deployment, APIs
-\item{} Tools: AWS, Emacs, Git, GNU/Linux, Mac OS X, Xcode
-
-\beginsection \section{Professional Experience}
+\scmtitle{Professional Experience}
 
 \halign{\hfil # \quad & # \hfil \cr
-2014--present & \bf Software Engineer at Alphaworks, a Betaworks Company \cr
+\serifgreen 2014--present & \serifbold Software Engineer at Alphaworks, a Betaworks Company \cr
 & A Betaworks company. \cr
 & \cr
-2012--present & \bf Senior Developer at Rhizome at the New Museum \cr
+\serifgreen 2012--present & \serifbold Senior Developer at Rhizome at the New Museum \cr
 & Manages all aspects of Rhizome’s website and servers. \cr
 & Technical advisor to the ArtBase, an award winning online archive of internet-based art. \cr
 & \cr
-2011--2012 & Software Engineer at Sanders New Media in Chicago, IL \cr
+\serifgreen 2011--2012 & \serifbold Software Engineer at Sanders New Media in Chicago, IL \cr
 & Responsible for architecture, coding and deployment of iOS apps and Python web applications. \cr
 & \cr
-2010--2011 & Web Developer at Columbia College Chicago \cr
+\serifgreen 2010--2011 & \serifbold Web Developer at Columbia College Chicago \cr
 & Designed and developed student portfolio websites using HTML/CSS. \cr
 & \cr
-2007--2010 & Co-owner at Orchestral Colour Records in San Jose, CA \cr
+\serifgreen 2007--2010 & \serifbold Co-owner at Orchestral Colour Records in San Jose, CA \cr
 & Co-founded independent record label in hometown promoting eclectic local artists. \cr
 & \cr
-Summer 2008 & Volunteer at Computer History Museum in Mountain View, CA \cr
+\serifgreen Summer 2008 & \serifbold Volunteer at Computer History Museum in Mountain View, CA \cr
 & Assisted with packaging and cataloging of computer related artifacts. \cr}
 
-\beginsection \section{Education}
+\scmtitle{Education}
+\scmitem{Columbia College Chicago - BA in Photography, minor in Web Development, 2006 – 2010 cum laude.}
+\scmitem{Foothill College - Various CS courses, Summers of ‘09 and ‘10.}
 
-\item{} Columbia College Chicago - BA in Photography, minor in Web Development, 2006 – 2010 cum laude.
-\item{} Foothill College - Various CS courses, Summers of ‘09 and ‘10.
+\scmtitle{Accolades}
+\scmitem{Perspective Gallery - Work selected for LENSE 2011 juried exhibition.}
+\scmitem{Poet and Didn’t Know it Award - The American Computer Experience 1998.}
 
-\beginsection \section{Accolades}
+\scmtitle{Shared Exhibitions}
+\scmitem{2011 - Perspective Gallery, LENSE 2011.}
+\scmitem{2011 - Photography B.A. + B.F.A. Manifest Exhibit.}
 
-\item{} Perspective Gallery - Work selected for LENSE 2011 juried exhibition.
-\item{} Poet and Didn’t Know it Award - The American Computer Experience 1998.
+\scmtitle{Collections}
+\scmitem{Columbia College Chicago Permanent Collection}
 
-\beginsection \section{Shared Exhibitions}
-
-\item{} 2011 - Perspective Gallery, LENSE 2011.
-\item{} 2011 - Photography B.A. + B.F.A. Manifest Exhibit.
-
-\beginsection \section{Collections}
-
-\item{} Columbia College Chicago Permanent Collection
-
-\beginsection \section{Publications}
-
-\item{} There and Back (Again): Homebrew Computer Club at 38. Rhizome Journal. December 16, 2013.
-\item{} http://rhizome.org/editorial/2013/dec/16/there-and-back-again-homebrew-computer-club-38/
+\scmtitle{Publications}
+\scmitem{There and Back (Again): Homebrew Computer Club at 38. Rhizome Journal. December 16, 2013.}
+\scmitem{http://rhizome.org/editorial/2013/dec/16/there-and-back-again-homebrew-computer-club-38/}
 
 \bye
