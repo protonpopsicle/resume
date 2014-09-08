@@ -1,15 +1,10 @@
 % Compile with XeTeX
-
-%{\LARGE\sffamily Scott Meisburger}
-
-%{\sffamily 571 Prospect Ave. | Brooklyn, NY 11215 | 408.836.4502 | smeisburger@gmail.com}
-\font\orator = "Orator Std Medium" at 11 pt
-\font\oratorbig = "Orator Std Medium" at 22 pt
-\font\oratorsmall = "Orator Std Medium" at 8 pt
-\font\oratorslanted = "Orator Std Slanted" at 11 pt
-\font\seriffont = "Georgia:mapping=tex-text" at 8 pt
-\font\serifbold = "Georgia/B:mapping=tex-text" at 8 pt
-\font\serifgreen = "Georgia:color=33AA88,mapping=tex-text" at 7 pt
+\font\os = "Orator Std Medium" at 8 pt
+\font\oslg = "Orator Std Medium" at 22 pt
+\font\osi = "Orator Std Slanted" at 11 pt
+\font\sf = "Georgia:mapping=tex-text" at 8 pt
+\font\sfb = "Georgia/B:mapping=tex-text" at 8 pt
+\font\sflight = "Georgia:color=33AA88,mapping=tex-text" at 7 pt
 
 \hoffset = - .5 in
 \voffset = - .5 in
@@ -18,17 +13,17 @@
 \parindent = 0 pt
 \baselineskip = 12 pt
 
-\def\scmtitle#1{\vskip 14 pt \leftline{\oratorslanted \uppercase{#1}} \vskip 6 pt}
-\def\scmitem#1{\leftline{\hskip 10pt #1}}
-
 \nopagenumbers
 
-\seriffont
+\def\scmtitle#1{\vskip 14 pt \leftline{\osi \uppercase{#1}} \vskip 6 pt}
+\def\scmitem#1{\leftline{\hskip 1.5 em #1}}
 
-{\oratorbig \uppercase{S\kern -.180em c\kern -.200em o\kern -.230em t\kern -.250em t\kern -.220em \ M\kern -.170em e\kern -.210em i\kern -.260em s\kern -.200em b\kern -.130em u\kern -.180em r\kern -.140em g\kern -.200em e\kern -.220em r}}
+\sf
+
+{\oslg \uppercase{S\kern -.180em c\kern -.200em o\kern -.230em t\kern -.250em t\kern -.220em \ M\kern -.170em e\kern -.210em i\kern -.260em s\kern -.200em b\kern -.130em u\kern -.180em r\kern -.140em g\kern -.200em e\kern -.220em r}}
 
 \vskip 4.4 pt
-\leftline{\oratorsmall 571 Prospect Ave.~| Brooklyn, NY 11215 | 408.836.4502 | smeisburger@gmail.com}
+\leftline{\os 571 Prospect Ave.~| Brooklyn, NY 11215 | 408.836.4502 | smeisburger@gmail.com}
 
 %% \scmtitle{Qualifications}
 %% \scmitem{Open source technology expertise}
@@ -40,27 +35,34 @@
 %% %% \item{} Skills: version control, TDD, Dev-Ops, deployment, APIs
 %% \scmitem{Tools: AWS, Emacs, Git, GNU/Linux, Mac OS X, Xcode}
 
-\scmtitle{Professional Experience}
+\scmtitle{Experience}
+% be smart, use macro compisition!
 
-\halign{\hfil # \quad & # \hfil \cr
-\serifgreen 2014--present & \serifbold Software Engineer at Alphaworks, a Betaworks Company \cr
-& A Betaworks company. \cr
-& \cr
-\serifgreen 2012--present & \serifbold Senior Developer at Rhizome at the New Museum \cr
-& Manages all aspects of Rhizome’s website and servers. \cr
-& Technical advisor to the ArtBase, an award winning online archive of internet-based art. \cr
-& \cr
-\serifgreen 2011--2012 & \serifbold Software Engineer at Sanders New Media in Chicago, IL \cr
-& Responsible for architecture, coding and deployment of iOS apps and Python web applications. \cr
-& \cr
-\serifgreen 2010--2011 & \serifbold Web Developer at Columbia College Chicago \cr
-& Designed and developed student portfolio websites using HTML/CSS. \cr
-& \cr
-\serifgreen 2007--2010 & \serifbold Co-owner at Orchestral Colour Records in San Jose, CA \cr
-& Co-founded independent record label in hometown promoting eclectic local artists. \cr
-& \cr
-\serifgreen Summer 2008 & \serifbold Volunteer at Computer History Museum in Mountain View, CA \cr
-& Assisted with packaging and cataloging of computer related artifacts. \cr}
+\def\expdate#1#2#3{\vtop{\baselineskip = .5\baselineskip \halign{\hfil ## \hfil \cr #1 \cr #2 \cr #3 \cr}}}
+
+%% \def\null{}
+%% \def\exprow#1#2#3#4#5#6#7{\line{\vtop{\baselineskip = .5\baselineskip \halign{\hfil ## \hfil \cr #1 \cr #2 \cr #3 \cr}} \quad \vtop{#4 \hfil} \vskip 10 pt}
+
+
+\line{\hskip 1 em \expdate{2014}{--}{present} \quad \vtop{\halign{# \hfil \cr
+                                  {\sfb Alphaworks,} Software Engineer \cr
+                                  A Betaworks company. \cr}} \hfil} \vskip\baselineskip
+
+\line{\hskip 1 em \expdate{2012}{--}{present} \quad \vtop{\halign{# \hfil \cr
+                                  {\sfb Rhizome,} Senior Developer \cr
+                                  Manages all aspects of Rhizome's website and servers. \cr
+                                  Technical advisor to the ArtBase, an award winning online archive of internet-based art. \cr}} \hfil}
+
+%% \exprow{2014}{--}{present}{{\sfb Alphaworks,} Software Engineer}{A Betaworks company.}{}{}
+
+
+%% \exprow{2011}{--}{2012}{{\sfb Sanders New Media,} Software Engineer}{Responsible for architecture, coding and deployment of iOS apps and Python web applications.}{}{}
+
+%% \exprow{2010}{--}{2011}{{\sfb Columbia College Chicago,} Web Developer}{Designed and developed student portfolio websites using HTML/CSS.}{}{}
+
+%% \exprow{2007}{--}{2010}{{\sfb Orchestral Colour Records,} Co-owner}{& Co-founded independent record label in hometown promoting eclectic local artists.}
+
+%% \exprow{Summer}{of}{2008}{{\sfb Computer History Museum,} Volunteer}{Assisted with packaging and cataloging of computer related artifacts.}{}{}
 
 \scmtitle{Education}
 \scmitem{Columbia College Chicago - BA in Photography, minor in Web Development, 2006 – 2010 cum laude.}
