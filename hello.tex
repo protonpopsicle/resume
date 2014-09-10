@@ -1,29 +1,31 @@
 % Compile with XeTeX
-\font\os = "Orator Std Medium" at 8 pt
-\font\oslg = "Orator Std Medium" at 22 pt
-\font\osi = "Orator Std Slanted" at 11 pt
+\font\sans = "Orator Std Medium" at 8 pt
+%% \font\sansbigred = "MyriadPro-Cond:color=CCCCCC" at 22 pt
+%% \font\sansbig = "MyriadPro-Cond" at 24 pt
+\font\sansbig = "Orator Std" at 22 pt
+\font\sansi = "Orator Std Slanted" at 11 pt
 \font\sf = "Georgia:mapping=tex-text" at 8 pt
 \font\sfb = "Georgia/B:mapping=tex-text" at 8 pt
-\font\sflight = "Georgia:color=33AA88,mapping=tex-text" at 7 pt
+
+\nopagenumbers
 
 \hoffset = - .5 in
 \voffset = - .5 in
 \vsize = 9 in
 
-\parindent = 0 pt
 \baselineskip = 12 pt
-
-\nopagenumbers
-
-\def\scmtitle#1{\vskip 14 pt \leftline{\osi \uppercase{#1}} \vskip 6 pt}
-\def\scmitem#1{\leftline{\hskip 1.5 em #1}}
-
+\parindent = 0 pt
 \sf
 
-{\oslg \uppercase{S\kern -.180em c\kern -.200em o\kern -.230em t\kern -.250em t\kern -.220em \ M\kern -.170em e\kern -.210em i\kern -.260em s\kern -.200em b\kern -.130em u\kern -.180em r\kern -.140em g\kern -.200em e\kern -.220em r}}
+\def\scmtitle#1{\vskip 14 pt \leftline{\sansi \uppercase{#1}} \vskip .5\baselineskip}
+\def\scmitem#1{\leftline{\hskip 1.5 em #1}}
+
+%% {\sansbig \uppercase{Scott Meisburger}}
+
+{\sansbig \uppercase{\hskip - .1em S\kern -.185em c\kern -.180em o\kern -.220em t\kern -.240em t\kern -.220em \ \kern -.260em M\kern -.180em e\kern -.220em i\kern -.260em s\kern -.200em b\kern -.170em u\kern -.220em r\kern -.170em g\kern -.210em e\kern -.200em r}}
 
 \vskip 4.4 pt
-\leftline{\os 571 Prospect Ave.~| Brooklyn, NY 11215 | 408.836.4502 | smeisburger@gmail.com}
+\leftline{\sans New York City | 408.836.4502 | smeisburger@gmail.com | @protonpopsicle}
 
 %% \scmtitle{Qualifications}
 %% \scmitem{Open source technology expertise}
@@ -36,25 +38,33 @@
 %% \scmitem{Tools: AWS, Emacs, Git, GNU/Linux, Mac OS X, Xcode}
 
 \scmtitle{Experience}
-% be smart, use macro compisition!
 
-\def\expdate#1#2#3{\vtop{\baselineskip = .5\baselineskip \halign{\hfil ## \hfil \cr #1 \cr #2 \cr #3 \cr}}}
+\def\xpdate#1#2#3{\vtop{\baselineskip = .5\baselineskip
+                                      \halign{\hfil ## \hfil \cr #1 \cr #2 \cr #3 \cr}}}
+\def\xpentry#1{\vtop{\halign{## \hfil \cr #1}} \hfil}
+\def\xpitem#1{#1 \cr}
+\def\xpsec#1#2#3#4{\line{\hskip 1 em \xpdate{#1}{#2}{#3}\hskip 1.24 em \xpentry{#4} \hfil} \vskip\baselineskip}
 
-%% \def\null{}
-%% \def\exprow#1#2#3#4#5#6#7{\line{\vtop{\baselineskip = .5\baselineskip \halign{\hfil ## \hfil \cr #1 \cr #2 \cr #3 \cr}} \quad \vtop{#4 \hfil} \vskip 10 pt}
+\xpsec{2014}{--}{present}{
+        \xpitem{{\sfb Alphaworks,} Software Engineer}
+        %% \xpitem{Wrote Python code to proxy financial documents stored in Amazon S3 through to privileged users.}
+        %% \xpitem{Member of team that developed and launched crowd-investing platform built with Python Flask and Backbone.js.}
+        %% \xpitem{Built tool for third-party verificaiton of accreditation status of potential investors on platform.}
+        %% \xpitem{Switched database encoding to UTF8, allowing for investors with non-english names.}
+        \xpitem{Implimented encryption strategies to protect sensitive data and documents.}
+        \xpitem{Built role-based permissions system atop Flask-Login for added security.}
+        \xpitem{Built two generations of advanced admin tools in Flask \& SQLAlchemy.}}
+        %% \xpitem{Performed numerous code reviews.}}
 
-
-\line{\hskip 1 em \expdate{2014}{--}{present} \quad \vtop{\halign{# \hfil \cr
-                                  {\sfb Alphaworks,} Software Engineer \cr
-                                  A Betaworks company. \cr}} \hfil} \vskip\baselineskip
-
-\line{\hskip 1 em \expdate{2012}{--}{present} \quad \vtop{\halign{# \hfil \cr
-                                  {\sfb Rhizome,} Senior Developer \cr
-                                  Manages all aspects of Rhizome's website and servers. \cr
-                                  Technical advisor to the ArtBase, an award winning online archive of internet-based art. \cr}} \hfil}
-
-%% \exprow{2014}{--}{present}{{\sfb Alphaworks,} Software Engineer}{A Betaworks company.}{}{}
-
+\xpsec{2012}{--}{present}{
+        \xpitem{{\sfb Rhizome,} Senior Developer}
+        %% \xpitem{Manages all aspects of Rhizome's website and servers.}
+        %% \xpitem{Technical advisor to the ArtBase, the award winning collection of internet art.}
+        \xpitem{Reduced webhosting costs by 86\% by migrating infrastructure to AWS.}
+        %% \xpitem{Developed real-time stats dashboard with Raspberry Pi \& D3.js }
+        \xpitem{Worked on digital conservation projects using LXC Containers.}
+        \xpitem{Python WayBack to capture and emulate complex JavaScript behavior.}
+        \xpitem{}}
 
 %% \exprow{2011}{--}{2012}{{\sfb Sanders New Media,} Software Engineer}{Responsible for architecture, coding and deployment of iOS apps and Python web applications.}{}{}
 
