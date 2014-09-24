@@ -1,8 +1,9 @@
 % Compile with XeTeX
+
 \font\sans = "Orator Std Medium" at 8 pt
 %% \font\sansbigred = "MyriadPro-Cond:color=CCCCCC" at 22 pt
-%% \font\sansbig = "MyriadPro-Cond" at 24 pt
-\font\sansbig = "Orator Std" at 22 pt
+%% \font\sansbig = "Orator Std Medium" at 22 pt
+\font\sansbig = "Avenir Next Condensed" at 22 pt
 \font\sansi = "Orator Std Slanted" at 11 pt
 \font\sf = "Georgia:mapping=tex-text" at 8 pt
 \font\sfb = "Georgia/B:mapping=tex-text" at 8 pt
@@ -11,7 +12,8 @@
 
 \hoffset = - .5 in
 \voffset = - .5 in
-\vsize = 9 in
+\hsize = 7.5 in
+\vsize = 10 in
 
 \baselineskip = 12 pt
 \parindent = 0 pt
@@ -20,49 +22,48 @@
 \def\scmtitle#1{\vskip 14 pt \leftline{\sansi \uppercase{#1}} \vskip .5\baselineskip}
 \def\scmitem#1{\leftline{\hskip 1.5 em #1}}
 
-%% {\sansbig \uppercase{Scott Meisburger}}
+\def\xpdate#1#2#3{\vtop{\baselineskip = .5\baselineskip \hsize .75 in
+                                      \line{\hfil #1 \hfil}
+                                      \line{\hfil #2 \hfil}
+                                      \line{\hfil #3 \hfil}}}
+\def\xpentry#1{\vtop{\hsize 2.75 in \tolerance 1000 #1}}
+\def\xprow#1#2{\line{#1 #2 \hfil} \vskip\baselineskip}
+\def\xpsec#1#2#3#4{\xpdate{#1}{#2}{#3} \xpentry{#4}}
 
-{\sansbig \uppercase{\hskip - .1em S\kern -.185em c\kern -.180em o\kern -.220em t\kern -.240em t\kern -.220em \ \kern -.260em M\kern -.180em e\kern -.220em i\kern -.260em s\kern -.200em b\kern -.170em u\kern -.220em r\kern -.170em g\kern -.210em e\kern -.200em r}}
+
+{\sansbig \uppercase{Scott Meisburger}}
+%% {\sansbig \uppercase{\hskip - .1em S\kern -.165em c\kern -.160em o\kern -.200em t\kern -.220em t\kern -.200em \ \kern -.240em M\kern -.160em e\kern -.200em i\kern -.240em s\kern -.180em b\kern -.150em u\kern -.200em r\kern -.150em g\kern -.190em e\kern -.180em r}}
 
 \vskip 4.4 pt
 \leftline{\sans New York City | 408.836.4502 | smeisburger@gmail.com | @protonpopsicle}
 
-\vskip\baselineskip
-
-{\sansi \uppercase{Open source technologist. Creates valuable software experiences with emerging technology for startups and the culture industry.}}
+\scmtitle{Overview}
+\scmitem{Kowledgeable in the visual arts, design and aesthetics.}
+\scmitem{Broad-ranging experience.}
+\scmitem{A propensity for mastering technology tools and techniques.}
 
 \scmtitle{Experience}
 
-\def\xpdate#1#2#3{\vtop{\baselineskip = .5\baselineskip
-                                      \halign{\hfil ## \hfil \cr #1 \cr #2 \cr #3 \cr}}}
-\def\xpentry#1{\vtop{\halign{## \hfil \cr #1}} \hfil}
-\def\xpitem#1{#1 \cr}
-\def\xpsec#1#2#3#4{\line{\hskip 1 em \xpdate{#1}{#2}{#3}\hskip 1.24 em \xpentry{#4} \hfil} \vskip\baselineskip}
-
+\xprow{
 \xpsec{2014}{--}{present}{
-        \xpitem{{\sfb Alphaworks,} Software Engineer}
-        %% \xpitem{Wrote Python code to proxy financial documents stored in Amazon S3 through to privileged users.}
-        %% \xpitem{Member of team that developed and launched crowd-investing platform built with Python Flask and Backbone.js.}
-        %% \xpitem{Built tool for third-party verificaiton of accreditation status of potential investors on platform.}
-        %% \xpitem{Switched database encoding to UTF8, allowing for investors with non-english names.}
-        \xpitem{Improved system security by by implimenting encryption for sensitive data and built a rolebased permissions system atop Flask.}
-        \xpitem{Built role-based permissions system atop Flask for flexible access configuration.}
-        \xpitem{Built two generations of advanced admin tools in Flask \& SQLAlchemy.}}
-        %% \xpitem{Performed numerous code reviews.}}
+        {\sfb Alphaworks,} Software Engineer
+        \item{-}Developed crowd-investing platform with experienced team at Betaworks.
+        \item{-}Participated in code review.
+        \item{-}Developed two generations of admin tools. (Flask, SQL-Alchemy)
+        }}{\xpsec{2012}{--}{present}{
+        {\sfb Rhizome,} Senior Developer
+        \item{-}Principle architect and develper of rhizome.org, related microsites and special projects. (Google Glass, Raspberry Pi, D3.js).
+        %% \xpitem{by migrating physical infrastructure to AWS cloud, reducing costs by 86\%.}
+        \item{-}Opened up developement of site to community, released code under GPLv2.
+        \item{-}Advises ArtBase, proof of concept work for para virtualized storage and retrieval of born-digital objects (Linux Containers, NGINX).
+        }}
 
-\xpsec{2012}{--}{present}{
-        \xpitem{{\sfb Rhizome,} Senior Developer}
-        %% \xpitem{Manages all aspects of Rhizome's website and servers.}
-        %% \xpitem{Technical advisor to the ArtBase, the award winning collection of internet art.}
-        \xpitem{Reduced webhosting costs by 86\% by migrating infrastructure to AWS.}
-        %% \xpitem{Developed real-time stats dashboard with Raspberry Pi \& D3.js }
-        \xpitem{Worked on digital conservation projects using LXC Containers.}
-        \xpitem{Python WayBack to capture and emulate complex JavaScript behavior.}
-        \xpitem{}}
-
-%% \exprow{2011}{--}{2012}{{\sfb Sanders New Media,} Software Engineer}{Responsible for architecture, coding and deployment of iOS apps and Python web applications.}{}{}
-
-%% \exprow{2010}{--}{2011}{{\sfb Columbia College Chicago,} Web Developer}{Designed and developed student portfolio websites using HTML/CSS.}{}{}
+\xprow{
+\xpsec{2011}{--}{2012}{
+        {\sfb Sanders New Media,} Software Engineer
+        \item{-}Responsible for architecture, coding and deployment of iOS apps and Python web applications.}}{\xpsec{2010}{--}{2011}{{\sfb Columbia College Chicago,} Web Developer
+        \item{-}Designed and developed student portfolio websites using HTML/CSS.
+}}
 
 %% \exprow{2007}{--}{2010}{{\sfb Orchestral Colour Records,} Co-owner}{& Co-founded independent record label in hometown promoting eclectic local artists.}
 
