@@ -2,6 +2,9 @@
 
 echo "Type path to scottmeisburger.com repo, followed by [ENTER]:"
 
+# Allows us to read user input below, assigns stdin to keyboard
+exec < /dev/tty
+
 read path
 
 cp *.pdf $path/
