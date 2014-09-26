@@ -12,7 +12,7 @@ cp *.pdf $path/
 cd $path
 git stash
 git add --all
-git commit -m 'synced resume doc'
+git commit -m 'updated resume pdf'
 git pull
 git push
 git stash apply
