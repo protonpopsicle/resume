@@ -7,7 +7,7 @@ exec < /dev/tty
 
 read path
 
-this_dir=${PWD##*/}
+this_dir=${PWD}
 
 cd $path && git stash
 
