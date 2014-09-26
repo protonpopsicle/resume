@@ -7,7 +7,8 @@ exec < /dev/tty
 
 read path
 
-cp *.pdf $path/
+cp -v
+    *.pdf $path/
 
 cd $path && git stash && git add --all && git commit -m 'updated resume pdf'
 cd $path && git pull && git push && git stash apply
