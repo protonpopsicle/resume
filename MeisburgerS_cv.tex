@@ -1,12 +1,12 @@
 % Compile with XeTeX
 
-\font\sans = "Orator Std Medium" at 8 pt
 %% \font\sansbigred = "MyriadPro-Cond:color=CCCCCC" at 22 pt
-%% \font\sansbig = "Orator Std Medium" at 22 pt
-\font\sansbig = "Avenir Next Condensed" at 22 pt
-\font\sansi = "Orator Std Slanted" at 11 pt
-\font\sf = "Georgia:mapping=tex-text" at 8 pt
-\font\sfb = "Georgia/B:mapping=tex-text" at 8 pt
+\font\sans = "Letter Gothic Std:mapping=tex-text" at 7 pt
+\font\sansbigger = "Letter Gothic Std:mapping=tex-text" at 8 pt
+\font\sansbiggerbold = "Letter Gothic Std/B:mapping=tex-text" at 8 pt
+
+\font\namefont = "Letter Gothic Std" at 25 pt
+\font\sansbiggerbolditalic = "Letter Gothic Std/BI" at 8 pt
 
 \nopagenumbers
 
@@ -15,27 +15,30 @@
 \hsize = 7.5 in
 \vsize = 10 in
 
-\baselineskip = 12 pt
+\baselineskip = 11 pt
 \parindent = 0 pt
-\sf
+\sans
 
-\def\scmtitle#1{\vskip 14 pt \leftline{\sansi \uppercase{#1}} \vskip .5\baselineskip}
-\def\scmitem#1{\leftline{\hskip 1.5 em #1}}
+\def\scmtitle#1{\vskip 1.5\baselineskip \leftline{\sansbiggerbolditalic \uppercase{#1}} \vskip \baselineskip}
+\def\scmitem#1{\leftline{- #1}}
 
-\def\xpdate#1#2#3{\vtop{\baselineskip = .5\baselineskip \hsize .75 in
-                                      \line{\hfil #1 \hfil}
+\def\xpdate#1#2#3{\vtop{\baselineskip = .5\baselineskip \hsize .55 in
+                                      \line{\hfil#1 \hfil}
                                       \line{\hfil #2 \hfil}
-                                      \line{\hfil #3 \hfil}}}
-\def\xpentry#1{\vtop{\hsize 2.75 in \tolerance 1000 #1}}
+                                      \line{\hfil #3 \hfil}} \hskip .1 in}
+\def\xpentry#1{\vtop{\hsize 2.75 in \tolerance 500 #1} \hskip .2 in}
 \def\xprow#1#2{\line{#1 #2 \hfil} \vskip\baselineskip}
 \def\xpsec#1#2#3#4{\xpdate{#1}{#2}{#3} \xpentry{#4}}
 
+\def\xptitle#1#2{{\sansbiggerbold\uppercase{#1} }{\sansbigger . #2} \vskip .4\baselineskip}
 
-{\sansbig \uppercase{Scott Meisburger}}
-%% {\sansbig \uppercase{\hskip - .1em S\kern -.165em c\kern -.160em o\kern -.200em t\kern -.220em t\kern -.200em \ \kern -.240em M\kern -.160em e\kern -.200em i\kern -.240em s\kern -.180em b\kern -.150em u\kern -.200em r\kern -.150em g\kern -.190em e\kern -.180em r}}
+\def\xpitem#1{\item{-}#1 \vskip .5\baselineskip}
 
-\vskip 4.4 pt
-\leftline{\sans New York City | 408.836.4502 | smeisburger@gmail.com | @protonpopsicle}
+
+{\namefont \uppercase{Scott Meisburger}}
+
+\vskip .5\baselineskip
+\leftline{\uppercase{New York City | 408.836.4502 | smeisburger@gmail.com | @protonpopsicle}}
 
 \scmtitle{Overview}
 \scmitem{Kowledgeable in the visual arts, design and aesthetics.}
@@ -44,30 +47,40 @@
 
 \scmtitle{Experience}
 
-\xprow{
-\xpsec{2014}{--}{present}{
-        {\sfb Alphaworks,} Software Engineer
-        \item{-}Developed crowd-investing platform with experienced team at Betaworks.
-        \item{-}Participated in code review.
-        \item{-}Developed two generations of admin tools. (Flask, SQL-Alchemy)
-        }}{\xpsec{2012}{--}{present}{
-        {\sfb Rhizome,} Senior Developer
-        \item{-}Principle architect and develper of rhizome.org, related microsites and special projects. (Google Glass, Raspberry Pi, D3.js).
+\xprow
+{\xpsec{2014}{--}{present}{
+        \xptitle{Alphaworks}{Software Engineer}
+        \xpitem{Developed crowd-investing platform with experienced team at Betaworks.}
+        \xpitem{Participated in code review.}
+        \xpitem{Developed two generations of admin tools. \break(Flask, SQL-Alchemy)}
+}}
+{\xpsec{2012}{--}{present}{
+        \xptitle{Rhizome}{Senior Developer}
+        \xpitem{Principle architect and developer of rhizome.org, related microsites and special projects. (Google Glass, Raspberry Pi, D3.js).}
         %% \xpitem{by migrating physical infrastructure to AWS cloud, reducing costs by 86\%.}
-        \item{-}Opened up developement of site to community, released code under GPLv2.
-        \item{-}Advises ArtBase, proof of concept work for para virtualized storage and retrieval of born-digital objects (Linux Containers, NGINX).
-        }}
-
-\xprow{
-\xpsec{2011}{--}{2012}{
-        {\sfb Sanders New Media,} Software Engineer
-        \item{-}Responsible for architecture, coding and deployment of iOS apps and Python web applications.}}{\xpsec{2010}{--}{2011}{{\sfb Columbia College Chicago,} Web Developer
-        \item{-}Designed and developed student portfolio websites using HTML/CSS.
+        \xpitem{Opened up developement of site to community, released code under GPLv2.}
+        \xpitem{Advises ArtBase, proof of concept work for para virtualized storage and retrieval of born-digital objects (Linux Containers, NGINX).}
 }}
 
-%% \exprow{2007}{--}{2010}{{\sfb Orchestral Colour Records,} Co-owner}{& Co-founded independent record label in hometown promoting eclectic local artists.}
+\xprow
+{\xpsec{2011}{--}{2012}{
+        \xptitle{Sanders New Media}{Software Engineer}
+        \xpitem{Responsible for architecture, coding and deployment of iOS apps and Python web applications.}
+}}
+{\xpsec{2010}{--}{2011}{
+        \xptitle{Columbia College Chicago}{Web Developer}
+        \xpitem{Designed and developed student portfolio websites using HTML/CSS.}
+}}
 
-%% \exprow{Summer}{of}{2008}{{\sfb Computer History Museum,} Volunteer}{Assisted with packaging and cataloging of computer related artifacts.}{}{}
+\xprow
+{\xpsec{2007}{--}{2010}{
+        \xptitle{Orchestral Colour Records}{Co-owner}
+        \xpitem{Co-founded independent record label in hometown promoting eclectic local artists.}
+}}
+{\xpsec{Summer}{}{2008}{
+        \xptitle{Computer History Museum}{Volunteer}
+        \xpitem{Assisted with packaging and cataloging of computer related artifacts.}
+}}
 
 \scmtitle{Education}
 \scmitem{Columbia College Chicago - BA in Photography, minor in Web Development, 2006 – 2010 cum laude.}
