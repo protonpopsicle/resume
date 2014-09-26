@@ -7,13 +7,9 @@ exec < /dev/tty
 
 read path
 
-this_dir=${PWD}
-
-cd $path && git stash
-
 cd $this_dir && cp -v *.pdf $path/
 
 cd $path && git add --all && git commit -m 'updated resume pdf'
-cd $path && git pull && git push && git stash apply
+cd $path && git pull && git push
 
 echo '...Yay!'
