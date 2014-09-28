@@ -1,7 +1,7 @@
 This is My Resume
 ======
 
-[PDF version](MeisburgerS.pdf)
+[PDF version](MeisburgerS.pdf?raw=True)
 
 TeX source
 ------
