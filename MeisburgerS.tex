@@ -1,12 +1,10 @@
 % Compile with XeTeX
 
-%% \font\sansbigred = "MyriadPro-Cond:color=CCCCCC" at 22 pt
 \font\sans = "Letter Gothic Std:mapping=tex-text" at 7 pt
 \font\sansbigger = "Letter Gothic Std:mapping=tex-text" at 8 pt
 \font\sansbiggerbold = "Letter Gothic Std/B:mapping=tex-text" at 8 pt
-
-\font\namefont = "Letter Gothic Std" at 25 pt
 \font\sansbiggerbolditalic = "Letter Gothic Std/BI" at 8 pt
+\font\namefont = "Letter Gothic Std" at 25 pt
 
 \nopagenumbers
 
@@ -19,11 +17,13 @@
 \parindent = 0 pt
 \sans
 
+\footline={\TeX{} source code available at https://github.com/protonpopsicle/resume/blob/master/MeisburgerS.tex \hfil}
+
 \def\scmtitle#1{\vskip 1.5\baselineskip \leftline{\sansbiggerbolditalic \uppercase{#1}} \vskip \baselineskip}
 \def\scmitem#1{\leftline{- #1}}
 
 \def\xpdate#1#2#3{\vtop{\baselineskip = .5\baselineskip \hsize .55 in
-                                      \line{\hfil#1 \hfil}
+                                      \line{\hfil #1 \hfil}
                                       \line{\hfil #2 \hfil}
                                       \line{\hfil #3 \hfil}} \hskip .1 in}
 \def\xpentry#1{\vtop{\hsize 2.75 in \tolerance 500 #1} \hskip .2 in}
@@ -41,41 +41,43 @@
 \leftline{\uppercase{New York City | 408.836.4502 | smeisburger@gmail.com | @protonpopsicle}}
 
 \scmtitle{Overview}
+\scmitem{Broad-ranging experience (5+ yrs) in open-source applicaiton developement.}
+\scmitem{Propensity for learning new technologies and tools.}
 \scmitem{Kowledgeable in the visual arts, design and aesthetics.}
-\scmitem{Broad-ranging experience.}
-\scmitem{A propensity for mastering technology tools and techniques.}
 
 \scmtitle{Experience}
 
 \xprow
 {\xpsec{2014}{--}{present}{
-        \xptitle{Alphaworks}{Software Engineer}
-        \xpitem{Developed crowd-investing platform with experienced team at Betaworks.}
-        \xpitem{Participated in code review.}
-        \xpitem{Developed two generations of admin tools. \break(Flask, SQL-Alchemy)}
+        \xptitle{Alphaworks}{Product Engineer Consultant}
+        \xpitem{Built crowd investing platform (alphaworks.net) as part of team, along with a distributed, open toolset (widgets and APIs).}
+        \xpitem{Performed code reviews, increased coverage of unit and browser tests.}
+        \xpitem{Developed advanced administrative tools for enabling efficient deal management.}
 }}
 {\xpsec{2012}{--}{present}{
         \xptitle{Rhizome}{Senior Developer}
-        \xpitem{Principle architect and developer of rhizome.org, related microsites and special projects. (Google Glass, Raspberry Pi, D3.js).}
-        %% \xpitem{by migrating physical infrastructure to AWS cloud, reducing costs by 86\%.}
-        \xpitem{Opened up developement of site to community, released code under GPLv2.}
-        \xpitem{Advises ArtBase, proof of concept work for para virtualized storage and retrieval of born-digital objects (Linux Containers, NGINX).}
+        \xpitem{Developed and maintained arts non-profit site rhizome.org (~1000 uniques daily), and special projects.}
+        \xpitem{Migrated infrastructure to AWS, reducing costs by 86\%, and automated deployment process.}
+        \xpitem{Pared site's codebase of 7 KLOC down to 3 KLOC, and released it under an open[GPL] licence.}
+        \xpitem{Co-managed the ArtBase (award-winning collection of digital art), and served as an advocate for digital art and digital preservation.}
 }}
 
 \xprow
 {\xpsec{2011}{--}{2012}{
         \xptitle{Sanders New Media}{Software Engineer}
-        \xpitem{Responsible for architecture, coding and deployment of iOS apps and Python web applications.}
+        \xpitem{Built applications for web and mobile as core member of engineering team in Chicago.}
+        \xpitem{Projects: iOS games, flash sales site, social networking app, digital comic + much more.}
 }}
 {\xpsec{2010}{--}{2011}{
         \xptitle{Columbia College Chicago}{Web Developer}
-        \xpitem{Designed and developed student portfolio websites using HTML/CSS.}
+        \xpitem{Designed and developed student portfolio websites.}
 }}
 
 \xprow
 {\xpsec{2007}{--}{2010}{
-        \xptitle{Orchestral Colour Records}{Co-owner}
-        \xpitem{Co-founded independent record label in hometown promoting eclectic local artists.}
+        \xptitle{Orchestral Colour Records}{Co-founder}
+        \xpitem{Performed accounting duties.}
+        \xpitem{Produced advertising and promotional materials for web and print.}
 }}
 {\xpsec{Summer}{}{2008}{
         \xptitle{Computer History Museum}{Volunteer}
@@ -84,11 +86,20 @@
 
 \scmtitle{Education}
 \scmitem{Columbia College Chicago - BA in Photography, minor in Web Development, 2006 – 2010 cum laude.}
-\scmitem{Foothill College - Various CS courses, Summers of ‘09 and ‘10.}
+
+\scmtitle{Languages and Technologies}
+\scmitem{Python, Django, Flask, JavaScript, jQuery, HTML5, CSS3, Objective-C}
+\scmitem{AWS, Emacs, Xcode, GNU/Linux, Photoshop, OS X, Nginx, MySQL, PostgreSQL, \TeX{}}
+\scmitem{Familiar with: Docker, CouchDB, iOS development, C++, Backbone.js, embedded systems}
 
 \scmtitle{Accolades}
-\scmitem{Perspective Gallery - Work selected for LENSE 2011 juried exhibition.}
-\scmitem{Poet and Didn’t Know it Award - The American Computer Experience 1998.}
+\scmitem{Perspective Gallery - Work selected for LENSE 2011 juried exhibition}
+\scmitem{Poet and Didn’t Know it Award - The American Computer Experience 1998}
+
+\scmtitle{Speaking Engagements}
+\scmitem{''Net Art Anatomy'' workshop, Mozilla Festival, London, October 2014}
+
+\vfil \break
 
 \scmtitle{Shared Exhibitions}
 \scmitem{2011 - Perspective Gallery, LENSE 2011.}
