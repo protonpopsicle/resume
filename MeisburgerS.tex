@@ -17,7 +17,7 @@
 \parindent = 0 pt
 \sans
 
-\footline={\TeX{} source available at https://github.com/protonpopsicle/resume/blob/master/MeisburgerS.tex \hfil}
+\footline={\sans \TeX{} source available at https://github.com/protonpopsicle/resume/blob/master/MeisburgerS.tex \hfil Page \folio}
 
 \def\title#1{\vskip 1.5\baselineskip \leftline{\sansbiggerbolditalic \uppercase{#1}} \vskip \baselineskip}
 \def\bulpoint#1{\leftline{- #1}}
@@ -29,7 +29,7 @@
 
 \def\xprow#1#2{\line{#1 #2 \hfil} \vskip\baselineskip}
 \def\xpcell#1#2#3#4{\date{#1}{#2}{#3} \xpbody{#4}}
-\def\xpbody#1{\vtop{\hsize 2.75 in \tolerance 500 #1} \hskip .2 in}
+\def\xpbody#1{\vtop{\hsize 2.75 in #1} \hskip .2 in}
 \def\xptitle#1#2{{\sansbiggerbold\uppercase{#1} }{\sansbigger . #2} \vskip .4\baselineskip}
 \def\xpbul#1{\item{-}#1 \vskip .5\baselineskip}
 
@@ -55,7 +55,7 @@
 }}
 {\xpcell{2012}{--}{present}{
         \xptitle{Rhizome}{Senior Developer}
-        \xpbul{Developed and maintained arts non-profit site rhizome.org (~1000 uniques daily), and special projects.}
+        \xpbul{Developed and maintained arts non-profit site rhizome.org (\~{}1000 uniques daily), and special projects.}
         \xpbul{Migrated infrastructure to AWS, reducing costs by 86\%, and automated deployment process.}
         \xpbul{Pared site's codebase of 7 KLOC down to 3 KLOC, and released it under an open[GPL] licence.}
         \xpbul{Co-managed the ArtBase (award-winning collection of digital art), and served as an advocate for digital art and digital preservation.}
@@ -65,7 +65,7 @@
 {\xpcell{2011}{--}{2012}{
         \xptitle{Sanders New Media}{Software Engineer}
         \xpbul{Built applications for web and mobile as core member of engineering team in Chicago.}
-        \xpbul{Projects: iOS games, flash sales site, social networking app, digital comic + much more.}
+        \xpbul{Projects: iOS games, flash sales site, social networking app, digital comic and more.}
 }}
 {\xpcell{2010}{--}{2011}{
         \xptitle{Columbia College Chicago}{Web Developer}
@@ -80,7 +80,7 @@
 }}
 {\xpcell{Summer}{}{2008}{
         \xptitle{Computer History Museum}{Volunteer}
-        \xpbul{Assisted with packaging and cataloging of computer related artifacts.}
+        \xpbul{Assisted with packaging and cataloging of com\-puter-related artifacts.}
 }}
 
 \title{Education}
