@@ -17,22 +17,21 @@
 \parindent = 0 pt
 \sans
 
-\footline={\TeX{} source code available at https://github.com/protonpopsicle/resume/blob/master/MeisburgerS.tex \hfil}
+\footline={\TeX{} source available at https://github.com/protonpopsicle/resume/blob/master/MeisburgerS.tex \hfil}
 
-\def\scmtitle#1{\vskip 1.5\baselineskip \leftline{\sansbiggerbolditalic \uppercase{#1}} \vskip \baselineskip}
-\def\scmitem#1{\leftline{- #1}}
+\def\title#1{\vskip 1.5\baselineskip \leftline{\sansbiggerbolditalic \uppercase{#1}} \vskip \baselineskip}
+\def\bulpoint#1{\leftline{- #1}}
 
-\def\xpdate#1#2#3{\vtop{\baselineskip = .5\baselineskip \hsize .55 in
+\def\date#1#2#3{\vtop{\baselineskip = .5\baselineskip \hsize .55 in
                                       \line{\hfil #1 \hfil}
                                       \line{\hfil #2 \hfil}
                                       \line{\hfil #3 \hfil}} \hskip .1 in}
-\def\xpentry#1{\vtop{\hsize 2.75 in \tolerance 500 #1} \hskip .2 in}
+
 \def\xprow#1#2{\line{#1 #2 \hfil} \vskip\baselineskip}
-\def\xpsec#1#2#3#4{\xpdate{#1}{#2}{#3} \xpentry{#4}}
-
+\def\xpcell#1#2#3#4{\date{#1}{#2}{#3} \xpbody{#4}}
+\def\xpbody#1{\vtop{\hsize 2.75 in \tolerance 500 #1} \hskip .2 in}
 \def\xptitle#1#2{{\sansbiggerbold\uppercase{#1} }{\sansbigger . #2} \vskip .4\baselineskip}
-
-\def\xpitem#1{\item{-}#1 \vskip .5\baselineskip}
+\def\xpbul#1{\item{-}#1 \vskip .5\baselineskip}
 
 
 {\namefont \uppercase{Scott Meisburger}}
@@ -40,76 +39,76 @@
 \vskip .5\baselineskip
 \leftline{\uppercase{New York City | 408.836.4502 | smeisburger@gmail.com | @protonpopsicle}}
 
-\scmtitle{Overview}
-\scmitem{Broad-ranging experience (5+ yrs) in open-source applicaiton developement.}
-\scmitem{Propensity for learning new technologies and tools.}
-\scmitem{Kowledgeable in the visual arts, design and aesthetics.}
+\title{Overview}
+\bulpoint{Broad-ranging experience (5+ yrs) in open-source applicaiton developement.}
+\bulpoint{Propensity for learning new technologies and tools.}
+\bulpoint{Kowledgeable in the visual arts, design and aesthetics.}
 
-\scmtitle{Experience}
+\title{Experience}
 
 \xprow
-{\xpsec{2014}{--}{present}{
+{\xpcell{2014}{--}{present}{
         \xptitle{Alphaworks}{Product Engineer Consultant}
-        \xpitem{Built crowd investing platform (alphaworks.net) as part of team, along with a distributed, open toolset (widgets and APIs).}
-        \xpitem{Performed code reviews, increased coverage of unit and browser tests.}
-        \xpitem{Developed advanced administrative tools for enabling efficient deal management.}
+        \xpbul{Built crowd investing platform (alphaworks.net) as part of team, along with a distributed, open toolset (widgets and APIs).}
+        \xpbul{Performed code reviews, increased coverage of unit and browser tests.}
+        \xpbul{Developed advanced administrative tools for enabling efficient deal management.}
 }}
-{\xpsec{2012}{--}{present}{
+{\xpcell{2012}{--}{present}{
         \xptitle{Rhizome}{Senior Developer}
-        \xpitem{Developed and maintained arts non-profit site rhizome.org (~1000 uniques daily), and special projects.}
-        \xpitem{Migrated infrastructure to AWS, reducing costs by 86\%, and automated deployment process.}
-        \xpitem{Pared site's codebase of 7 KLOC down to 3 KLOC, and released it under an open[GPL] licence.}
-        \xpitem{Co-managed the ArtBase (award-winning collection of digital art), and served as an advocate for digital art and digital preservation.}
+        \xpbul{Developed and maintained arts non-profit site rhizome.org (~1000 uniques daily), and special projects.}
+        \xpbul{Migrated infrastructure to AWS, reducing costs by 86\%, and automated deployment process.}
+        \xpbul{Pared site's codebase of 7 KLOC down to 3 KLOC, and released it under an open[GPL] licence.}
+        \xpbul{Co-managed the ArtBase (award-winning collection of digital art), and served as an advocate for digital art and digital preservation.}
 }}
 
 \xprow
-{\xpsec{2011}{--}{2012}{
+{\xpcell{2011}{--}{2012}{
         \xptitle{Sanders New Media}{Software Engineer}
-        \xpitem{Built applications for web and mobile as core member of engineering team in Chicago.}
-        \xpitem{Projects: iOS games, flash sales site, social networking app, digital comic + much more.}
+        \xpbul{Built applications for web and mobile as core member of engineering team in Chicago.}
+        \xpbul{Projects: iOS games, flash sales site, social networking app, digital comic + much more.}
 }}
-{\xpsec{2010}{--}{2011}{
+{\xpcell{2010}{--}{2011}{
         \xptitle{Columbia College Chicago}{Web Developer}
-        \xpitem{Designed and developed student portfolio websites.}
+        \xpbul{Designed and developed student portfolio websites.}
 }}
 
 \xprow
-{\xpsec{2007}{--}{2010}{
+{\xpcell{2007}{--}{2010}{
         \xptitle{Orchestral Colour Records}{Co-founder}
-        \xpitem{Performed accounting duties.}
-        \xpitem{Produced advertising and promotional materials for web and print.}
+        \xpbul{Performed accounting duties.}
+        \xpbul{Produced advertising and promotional materials for web and print.}
 }}
-{\xpsec{Summer}{}{2008}{
+{\xpcell{Summer}{}{2008}{
         \xptitle{Computer History Museum}{Volunteer}
-        \xpitem{Assisted with packaging and cataloging of computer related artifacts.}
+        \xpbul{Assisted with packaging and cataloging of computer related artifacts.}
 }}
 
-\scmtitle{Education}
-\scmitem{Columbia College Chicago - BA in Photography, minor in Web Development, 2006 – 2010 cum laude.}
+\title{Education}
+\bulpoint{Columbia College Chicago - BA in Photography, minor in Web Development, 2006 – 2010 cum laude.}
 
-\scmtitle{Languages and Technologies}
-\scmitem{Python, Django, Flask, JavaScript, jQuery, HTML5, CSS3, Objective-C}
-\scmitem{AWS, Emacs, Xcode, GNU/Linux, Photoshop, OS X, Nginx, MySQL, PostgreSQL, \TeX{}}
-\scmitem{Familiar with: Docker, CouchDB, iOS development, C++, Backbone.js, embedded systems}
+\title{Languages and Technologies}
+\bulpoint{Python, Django, Flask, JavaScript, jQuery, HTML5, CSS3, Objective-C}
+\bulpoint{AWS, Emacs, Xcode, GNU/Linux, Photoshop, OS X, Nginx, MySQL, PostgreSQL, \TeX{}}
+\bulpoint{Familiar with: Docker, CouchDB, iOS development, C++, Backbone.js, embedded systems}
 
-\scmtitle{Accolades}
-\scmitem{Perspective Gallery - Work selected for LENSE 2011 juried exhibition}
-\scmitem{Poet and Didn’t Know it Award - The American Computer Experience 1998}
+\title{Accolades}
+\bulpoint{Perspective Gallery - Work selected for LENSE 2011 juried exhibition}
+\bulpoint{Poet and Didn’t Know it Award - The American Computer Experience 1998}
 
-\scmtitle{Speaking Engagements}
-\scmitem{''Net Art Anatomy'' workshop, Mozilla Festival, London, October 2014}
+\title{Speaking Engagements}
+\bulpoint{''Net Art Anatomy'' workshop, Mozilla Festival, London, October 2014}
 
 \vfil \break
 
-\scmtitle{Shared Exhibitions}
-\scmitem{2011 - Perspective Gallery, LENSE 2011.}
-\scmitem{2011 - Photography B.A. + B.F.A. Manifest Exhibit.}
+\title{Shared Exhibitions}
+\bulpoint{2011 - Perspective Gallery, LENSE 2011.}
+\bulpoint{2011 - Photography B.A. + B.F.A. Manifest Exhibit.}
 
-\scmtitle{Collections}
-\scmitem{Columbia College Chicago Permanent Collection}
+\title{Collections}
+\bulpoint{Columbia College Chicago Permanent Collection}
 
-\scmtitle{Publications}
-\scmitem{There and Back (Again): Homebrew Computer Club at 38. Rhizome Journal. December 16, 2013.}
-\scmitem{http://rhizome.org/editorial/2013/dec/16/there-and-back-again-homebrew-computer-club-38/}
+\title{Publications}
+\bulpoint{There and Back (Again): Homebrew Computer Club at 38. Rhizome Journal. December 16, 2013.}
+\bulpoint{http://rhizome.org/editorial/2013/dec/16/there-and-back-again-homebrew-computer-club-38/}
 
 \bye
