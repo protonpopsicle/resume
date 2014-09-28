@@ -6,7 +6,7 @@ This is My Resume
 TeX source
 ------
 
-Compile with XeTeX. You'll need Letter Gothic Std to be present on your system. 
+Compile with XeTeX. You will need Letter Gothic Std installed on your system. 
 
 `$ xetex MeisburgerS.tex`
 
