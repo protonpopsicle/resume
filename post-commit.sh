@@ -1,12 +1,11 @@
 #!/bin/sh
 
-# echo "What's the full path to your site's repo Scott?:"
+echo "What's the full path to your site's repo Scott?:"
 
 # Allows us to read user input below, assigns stdin to keyboard
-# exec < /dev/tty
+exec < /dev/tty
 
-# read path
-path = '../protonpopsicle.github.io'
+read path
 
 cp -v *.pdf $path/
 
