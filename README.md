@@ -1,4 +1,4 @@
-This is My Resume
+Resume
 ======
 
 [PDF version](MeisburgerS.pdf?raw=True)
