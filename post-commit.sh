@@ -1,6 +1,6 @@
 #!/bin/sh
 
-$path = ../protonpopsicle.github.io
+$path = '../protonpopsicle.github.io'
 
 cp -v *.pdf $path/
 
