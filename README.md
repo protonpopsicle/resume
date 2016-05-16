@@ -1,7 +1,7 @@
 Resume
 ======
 
-[PDF version](MeisburgerS.pdf?raw=True)
+[PDF version](http://scottmeisburger.com/assets/MeisburgerS.pdf)
 
 TeX source
 ------
