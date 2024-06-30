@@ -1,9 +1,9 @@
 % Compile with XeTeX
 
-\font\sans = "Letter Gothic Std:mapping=tex-text" at 7 pt
-\font\sansbigger = "Letter Gothic Std:mapping=tex-text" at 8 pt
-\font\sansbiggerbold = "Letter Gothic Std/B:mapping=tex-text" at 8 pt
-\font\sansbiggerbolditalic = "Letter Gothic Std/BI" at 8 pt
+\font\sans = "Letter Gothic Std:mapping=tex-text" at 8 pt
+\font\sansbigger = "Letter Gothic Std:mapping=tex-text" at 9 pt
+\font\sansbiggerbold = "Letter Gothic Std/B:mapping=tex-text" at 9 pt
+\font\sansbiggerbolditalic = "Letter Gothic Std/BI" at 10 pt
 \font\namefont = "Letter Gothic Std" at 25 pt
 
 \nopagenumbers
@@ -22,31 +22,33 @@
 \footline={\sans \TeX{} source available at https://github.com/protonpopsicle/resume/blob/master/MeisburgerS.tex \hfil Page \folio}
 
 \def\title#1{\vskip 1.5\baselineskip \leftline{\sansbiggerbolditalic \uppercase{#1}} \vskip \baselineskip}
-\def\bulpoint#1{\leftline{- #1}}
+\def\bulpoint#1{\item{-}#1 \vskip .5\baselineskip}
 
 \def\date#1#2#3{\vtop{\baselineskip = .5\baselineskip \hsize .55 in
                                       \line{\hfil #1 \hfil}
                                       \line{\hfil #2 \hfil}
                                       \line{\hfil #3 \hfil}} \hskip .1 in}
 
-\def\xprow#1#2{\line{#1 #2 \hfil} \vskip\baselineskip}
+\def\xprow#1{\line{#1} \vskip\baselineskip}
 \def\xpcell#1#2#3#4{\date{#1}{#2}{#3} \xpbody{#4}}
-\def\xpbody#1{\vtop{\hsize 2.75 in #1} \hskip .2 in}
+\def\xpbody#1{\vtop{\hsize 6.5 in #1} \hskip .2 in}
 \def\xptitle#1#2{{\sansbiggerbold\uppercase{#1} }{\sansbigger . #2} \vskip .4\baselineskip}
-\def\xptitlelong#1#2{\leftline{\sansbiggerbold\uppercase{#1}} \leftline{\sansbigger #2} \vskip .4\baselineskip}
+\def\xptitlelong#1#2{\leftline{\sansbiggerbold\uppercase{#1}} \vskip .2\baselineskip \leftline{\sansbigger #2} \vskip .8\baselineskip}
 \def\xpbul#1{\item{-}#1 \vskip .5\baselineskip}
 
 
 {\namefont \uppercase{Scott Meisburger}}
 
 \vskip .5\baselineskip
-\leftline{\uppercase{99 Gold St Apt 4C, Brooklyn NY | 408.836.4502 | smeisburger@gmail.com}}
+\leftline{\uppercase{99 Gold St Apt 4C, Brooklyn NY | 408.836.4502 | smeisburger@gmail.com} | www.linkedin.com/in/scottmeisburger}
 
 \title{Overview}
-\bulpoint{Highly skilled in leading technical teams.}
-\bulpoint{Deep experience in open-source application development.}
-\bulpoint{Proven experience building engineering organizations.}
-\bulpoint{Expertise in people management, IoT, real-time web, multimedia and cloud infrastructure.}
+
+Technology leader, software engineer and product developement professional with experience building high-quality software products and infrastructure at startups and global corporations. Skilled at directing lean, high-functioning software teams on complex projects.
+
+\title{Experience Highlights}
+\bulpoint{At AT\&T, spun up full-stack software development teams to transform legacy business-critical applications. Skills: staffing, digital transformation, tech due diligence, change management, DevOps, application security.}
+\bulpoint{At Samsung, coded major backend services to support launch of cloud-connected cameras. Managed engineering team for audio/video platform allowing Samsung home products to connect and stream media to SmartThings clients. Skills: IoT, multimedia, real-time applications, cloud, data security.}
 
 \title{Experience}
 
@@ -59,6 +61,7 @@
         \xpbul{Mentored engineering leaders in 4 offices, provided coaching and hands-on technical oversight in full-stack development, DevOps and security.}
         \xpbul{Developed new engineering processes, drove adoption of industry best-practices and implemented new programs including peer tech demos to empower teams and foster strong engineering culture.}
 }}
+\xprow
 {\xpcell{2018}{--}{2022}{
         \xptitlelong{Samsung SmartThings}{Engineering Manager, AV Platform}
         \xpbul{Managed junior and senior level engineers, provided coaching and mentoring leading to career growth and development.}
@@ -74,6 +77,7 @@
         \xpbul{Built major cloud services in Python: API server, media server and distributed messaging bus.}
         \xpbul{Supported global product rollout for strategic partnership between Samsung Mobile and wireless carriers.}
 }}
+\xprow
 {\xpcell{2014}{--}{2016}{
         \xptitlelong{Perch at Samsung Accelerator}{Software Engineer}
         \xpbul{Home monitoring startup. Got acquired by Samsung SmartThings in April 2016.}
@@ -88,6 +92,7 @@
         \xpbul{Developed MVP for alphaworks.net (crowd investing platform).}
         \xpbul{Led development of admin tools to enable efficient deal management.}
 }}
+\xprow
 {\xpcell{2012}{--}{2014}{
         \xptitlelong{Rhizome at the New Museum}{Senior Developer}
         \xpbul{Developed and maintained arts non-profit website rhizome.org.}
@@ -120,9 +125,9 @@
 \bulpoint{Columbia College Chicago - BA in Photography, minor in Web Development, 2006 – 2010 cum laude.}
 
 \title{Languages and Technologies}
-\bulpoint{Python, JavaScript, AWK, Bash, C, jQuery, HTML/CSS}
-\bulpoint{AWS, GNU/Linux, macOS, Git, Docker, Terraform, MariaDB, GStreamer, WebRTC, Nginx, \TeX{}}
-\bulpoint{Familiar with: C++, GLib, Java, RTSP, Make}
+\bulpoint{Python, JavaScript, Bash, C, jQuery, HTML/CSS, microservice architecture, CI/CD}
+\bulpoint{AWS, GNU/Linux, macOS, Git, Docker, Terraform, MariaDB, MongoDB, GStreamer, WebRTC, Nginx, Reddis}
+\bulpoint{Familiar with: C++, GLib, Java, RTSP, Make, \TeX{}}
 
 \title{Accolades}
 \bulpoint{Perspective Gallery - Work selected for LENSE 2011 juried exhibition}
