@@ -1,22 +1,16 @@
 SCOTT MEISBURGER
-HONOLULU, HI — OPEN TO REMOTE, NEW YORK CITY, OR SAN FRANCISCO BAY AREA RELOCATION | 408.836.4502 | SMEISBURGER@GMAIL.COM | www.linkedin.com/in/scottmeisburger
-OVERVIEW
+HONOLULU, HI — OPEN TO REMOTE, NEW YORK CITY, OR SAN FRANCISCO BAY AREA RELOCATION
+408.836.4502 | SMEISBURGER@GMAIL.COM | www.linkedin.com/in/scottmeisburger
 
-Technology leader, software engineer and product development professional with experience building high-quality
-software products and infrastructure at startups and global corporations. Skilled at directing lean, high-
-functioning software teams on complex projects.
+OVERVIEW
+Technology leader, software engineer and product development professional with experience building high-quality software products and infrastructure at startups and global corporations. Skilled at directing lean, high-functioning software teams on complex projects.
 
 
 EXPERIENCE HIGHLIGHTS
-- At AT&T, built and led full-stack teams transforming legacy business-critical applications; now drives Billing and
-Authorization target architecture across global teams. Skills: staffing, platform architecture, digital transformation,
-tech due diligence, change management, DevOps, application security.
-- At Samsung, coded major backend services to support launch of cloud-connected cameras. Managed engineering team
-for audio/video platform allowing Samsung home products to connect and stream media to SmartThings clients. Skills:
-IoT, multimedia, real-time applications, cloud, data security.
+- At AT&T, built and led full-stack teams transforming legacy business-critical applications; now drives Billing and Authorization target architecture across global teams. Skills: staffing, platform architecture, digital transformation, tech due diligence, change management, DevOps, application security.
+- At Samsung, coded major backend services to support launch of cloud-connected cameras. Managed engineering team for audio/video platform allowing Samsung home products to connect and stream media to SmartThings clients. Skills: IoT, multimedia, real-time applications, cloud, data security.
 
 EXPERIENCE
-
 Jan 2022 - Present
 Director Technology-Product Development / Expert Software Engineering, Platform Architecture
 AT&T
@@ -55,7 +49,7 @@ ALPHAWORKS, A BETAWORKS COMPANY
 - Developed MVP for alphaworks.net (crowd investing platform).
 - Led development of admin tools to enable efficient deal management.
 
-No 2012 - Dec 2014
+Nov 2012 - Dec 2014
 Senior Developer
 RHIZOME AT THE NEW MUSEUM
 - Developed and maintained arts non-profit website rhizome.org.
@@ -65,16 +59,16 @@ EDUCATION
 - Columbia College Chicago - BA in Photography, minor in Web Development, 2006 – 2010 cum laude.
 
 LANGUAGES AND TECHNOLOGIES
-- Python, JavaScript, Bash, C, jQuery, HTML/CSS, microservice architecture, CI/CD
-- AWS, GNU/Linux, macOS, Git, Docker, Terraform, MariaDB, MongoDB, GStreamer, WebRTC, Nginx, Reddis
-- Familiar with: C++, GLib, Java, RTSP, Make, TEX
+- Python, JavaScript, Bash, C, React, HTML/CSS, microservice architecture, K8s, CI/CD
+- AWS, GNU/Linux, macOS, Git, Docker, Terraform, MariaDB, MongoDB, GStreamer, WebRTC, Nginx, Redis
+- Familiar with: C, C++, Java, RTSP, Make, TeX
 
 ACCOLADES
 - Perspective Gallery - Work selected for LENSE 2011 juried exhibition
-- Poet and Didn’t Know it Award - The American Computer Experience 1998
+- Poet and Didn't Know it Award - The American Computer Experience 1998
 
 SPEAKING ENGAGEMENTS
-- ”Net Art Anatomy” workshop, Mozilla Festival, London, October 2014
+- "Net Art Anatomy" workshop, Mozilla Festival, London, October 2014
 
 SHARED EXHIBITIONS
 - 2011 - Perspective Gallery, LENSE 2011.
